@@ -7,15 +7,13 @@ public class Main {
 		FurnitureAssemblyLine steel = new SteelAssemblyLine();
 		DependantAssemblyLine dep = new DependantAssemblyLine();
 		
-		Furniture furniture = ebony.makeFurniture("Chair");
+		ebony.makeFurniture("Chair");
 		
-		furniture = steel.makeFurniture("Table");
+		steel.makeFurniture("Table");
 		
-		furniture = ebony.makeFurniture("Shelf");
+		ebony.makeFurniture("Shelf");
 		
-		furniture = dep.fabricateFurniture("ebony", "Chair");
-		
+		dep.fabricateFurniture("ebony", "Chair");
 		
 	}
-
 }

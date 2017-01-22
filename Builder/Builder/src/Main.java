@@ -8,9 +8,7 @@ public class Main {
 		RifleBuilder rifle = new RifleBuilder();
 		
 		factory.assemble(handgun);
-		
 		factory.assemble(rifle);
 		
 	}
-
 }

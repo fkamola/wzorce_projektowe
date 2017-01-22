@@ -1,38 +1,38 @@
 
 public class KlientBuilder {
-	protected Klient klient;
+	protected Client klient;
 	
 	public KlientBuilder(){
-		klient = new Klient();
+		klient = new Client();
 	}
 	
 	public KlientBuilder imie_nazwisko(String imie, String nazwisko){
-		klient.imie = imie;
-		klient.nazwisko = nazwisko;
+		klient.setImie(imie);
+		klient.setNazwisko(nazwisko);
 		return this;
 	}
 	
 	public KlientBuilder telefon(String telefon){
-		klient.telefon = telefon;
+		klient.setTelefon(telefon);
 		return this;
 	}
 	
 	public KlientBuilder email(String email){
-		klient.email = email;
+		klient.setEmail(email);
 		return this;
 	}
 	
 	public KlientBuilder adres(String adres){
-		klient.adres = adres;
+		klient.setAdres(adres);
 		return this;
 	}
 	
-	public KlientBuilder PESEL(int pesel){
-		klient.PESEL = pesel;
+	public KlientBuilder PESEL(String string){
+		klient.setPESEL(string);
 		return this;
 	}
 	
-	public Klient get_Klient(){
+	public Client get_Klient(){
 		return klient;
 	}
 	

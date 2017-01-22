@@ -7,7 +7,6 @@ public class Test {
 		StudentsPrototype students = new StudentsPrototype();
 		students.loadData();
 		
-		//Use the clone method to get the Employee object
 		StudentsPrototype studentsNew = (StudentsPrototype) students.clone();
 		
 		StudentsPrototype studentsNew1 = (StudentsPrototype) students.clone();

@@ -12,5 +12,4 @@ public class Main {
 		furniture = store.makeFurniture("Table");
 		System.out.println("Finished production of: " + furniture.getName());
 	}
-
 }

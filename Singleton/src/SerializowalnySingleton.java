@@ -9,12 +9,12 @@ public class SerializowalnySingleton implements Serializable{
     
     
     //implementacja Billa Pugh'a
-    private static class SingletonHelper{
+    private static class SingletonHolder{
         private static final SerializowalnySingleton instance = new SerializowalnySingleton();
     }
     
     public static SerializowalnySingleton getInstance(){
-        return SingletonHelper.instance;
+        return SingletonHolder.instance;
     }
     
     protected Object readResolve() throws ObjectStreamException{

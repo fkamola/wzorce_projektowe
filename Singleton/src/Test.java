@@ -24,5 +24,4 @@ public class Test {
         System.out.println("instanceTwo hashCode="+instanceTwo.hashCode());
         
     }
-
 }
